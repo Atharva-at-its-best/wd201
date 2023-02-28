@@ -26,6 +26,9 @@ fs.readFile("registration.html", (err, registration) => {
     registrationContent = registration;
 });
 
+const portIndex = process.argv.indexOf('--port');
+const port = process.argv[portIndex + 1] || 5000;
+
 http.createServer((request, response) => {
     let url = request.url;
     if (url === '/webpage.css') {
@@ -75,4 +78,6 @@ http.createServer((request, response) => {
         }
         response.end();
     }
-}).listen(5000);
+}).listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
