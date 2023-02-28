@@ -1,0 +1,132 @@
+body {
+    background-color: whitesmoke;
+    padding-top: 40px;
+    width: 100%;
+    background-image: url(webpage.jpg);
+    background-position: centre;
+    background-size: cover;
+    position: relative;
+}
+
+.box {
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray, -5px 5px 5px gray, -5px -5px 5px gray, 5px -5px 5px gray;
+
+
+}
+
+.title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+label[for=acceptTerms] {
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+input[type="date"] {
+    color: rgb(185, 30, 138);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+button[type="submit"] {
+    padding: 20px 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.mx-auto {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray, -5px 5px 5px gray, -5px -5px 5px gray, 5px -5px 5px gray;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 16px;
+
+}
+
+th {
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.title2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+
+}
+
+.image {
+    width: 100%;
+    background-image: url(webpage.jpg);
+    background-position: centre;
+    background-size: cover;
+    position: relative;
+}
