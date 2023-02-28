@@ -1,6 +1,12 @@
 const http = require("http");
 const fs = require("fs");
 const readline = require("readline");
+let minimist = require("minimist")
+let args = minimist(process.argv.slice(2), {
+    default: {
+        port: 3000
+    }
+});
 
 let homeContent = "";
 let projectContent = "";
@@ -93,7 +99,7 @@ function startServer() {
             }
             response.end();
         }
-    }).listen(port, () => {
+    }).listen(args.port, () => {
         console.log(`Server running at http://localhost:${port}/`);
     });
 }
