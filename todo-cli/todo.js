@@ -26,7 +26,11 @@ const todoList = () => {
         let output = "";
         list.forEach((item, index) => {
             const status = item.completed ? "X" : " ";
-            output += `[${status}] ${item.title} ${item.dueDate}\n`;
+            if (item.dueDate === today && !item.completed || item.completed) {
+                output += `[${status}] ${item.title}\n`;
+            } else {
+                output += `[${status}] ${item.title} ${item.dueDate}\n`;
+            }
         });
         return output;
     }
